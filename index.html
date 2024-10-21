@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tax Calculator</title>
+
+        <!-- Roboto font embed -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+        <!-- Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="header">
+                <div id="icon">
+                    <img src="Resources/Icons/logo.png" alt="logo" />
+                    <h1>Canadian Tax Calculator</h1>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+            <div class="column1">
+                <!-- Income/Payment Input Boxes-->
+                <br/><br/>
+                <label for="incomeKatie">Katie Salary:</label>
+                <input type="number" id="incomeKatie" name="incomeKatie" value="0">
+                <br/>
+                <label for="RRSPpctKatie">Katie RRSP %:</label>
+                <input type="number" id="RRSPpctKatie" name="RRSPpctKatie" value="6">
+                <br/>
+                <br/>
+                <label for="incomeNate">Nate Salary:</label>
+                <input type="number" id="incomeNate" name="incomeNate" value="0">
+                <br/>
+                <label for="RRSPpctNate">Nate RRSP %:</label>
+                <input type="number" id="RRSPpctNate" name="RRSPpctNate" value="6">
+                <br/>
+                <label for="payPeriod">Select Pay Frequency:</label>
+                <select name="payPeriod" id="payPeriod">
+                    <option value="26">Bi-Weekly</option>
+                    <option value="52">Weekly</option>
+                    <option value="12">Monthly</option>
+                </select>
+            
+    
+                <!-- Run Retirement Analysis Button -->
+                <br/><br/>
+                    <button type="button" id="taxButton">Analyze Taxes</button>
+            </div>
+            <!-- Output Container -->
+            <div class="column2">
+                <h2>Katie Earnings</h2>
+                <div id="resultsKatie">
+                </div>
+                <h2>Nate Earnings</h2>
+                <div id="resultsNate">
+                </div>
+                <h2>Total Earnings</h2>
+                <div id="resultsTotal">
+                </div>
+            </div>
+        </div>
+        
+        
+            <!-- Javascript Files -->
+        <script src="Resources/JS/main.js"> </script>
+    </body>
+
+</html>
